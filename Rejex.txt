@@ -1,0 +1,81 @@
+In Regex we have pattern and Modifier pattern/Modifier
+
+1.[]
+Brackets can define single characters, groups, or character spans:
+
+2.[^]
+Brackets [^abc] specifies matches for any character NOT between the brackets.
+Brackets can define single characters, groups, or character spans:
+
+3.(a|b)
+if 'a' avalible find othervise find 'b' 
+The (x|y) expression is used to find any of the alternatives specified.
+
+4.Metacharacter in Regex :
+/\w/groups
+\w
+The \w metacharacter matches word characters.
+A word character is a character a-z, A-Z, 0-9, including _ (underscore).
+
+5.let pattern = /\W/g;
+\W
+The \W metacharacter matches non-word characters:
+A word character is a character a-z, A-Z, 0-9, including _ (underscore).
+
+6.let pattern = /\d/g;
+The \d metacharacter matches digits from 0 to 9.
+
+7.let pattern = /\D/g;
+The \D metacharacter matches non-digit characters.
+
+8.let pattern = /\s/g;
+The \s metacharacter matches whitespace character.
+
+9.let pattern = /\s/g;
+The \S metacharacter matches non-whitespace characters.
+
+10.let pattern = /\b/g;
+Used forn the search the begning word
+The \b metacharacter matches at the beginning or end of a word.
+
+11. let pattern = /\B/g;
+The \B metacharacter matches NOT at the beginning/end of a word.
+
+12. let pattern = /\0/g
+The \0 metacharacter maches NUL characters.
+
+13. let pattern = /\n/g
+The \n character matches newline characters.
+
+14. let pattern = /\f/; 
+let text = "Visit W3Schools.\fLearn Javascript.";
+The \f metacharacter matches form feed characters.
+
+15.let pattern = /\r/;
+The \r metacharacter matches carriage return characters.
+
+16.let pattern = /\t/;
+The \t metacharacter matches horizontal tabs (tabulators).
+
+17.let pattern = /\v/;
+The \v metacharacter matches vertical tab characters (tabulators).
+
+18.let pattern = /\xxx/;
+A global search the octal number 127 (W)
+The \xxx metacharacters matches the Latin character by an octal number (xxx).
+
+19.let pattern = /\x57/g;
+Do a global search for the hexadecimal number 57 (W) in a string:
+
+Quantifiers::::::::::::::::::::::>>>>>>>>>>>>>>
+
+20.let pattern = /o+/g;
+The n+ quantifier matches any string that contains at least one n.
+
+21.let pattern = /lo*/g;
+let text = "Hellooo World! Hello W3Schools!";
+A global search for an "l", followed by zero or more "o" characters:
+The n* quantifier matches any string that contains zero or more occurrences of n.
+
+Do a global search for a "1", followed by zero or one "0" characters:
+
